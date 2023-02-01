@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Inter";
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem 0.8rem;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+::placeholder {
+  font-size: small;
+}
+
+.main-container {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(177, 221, 245);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+
+header {
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formValid,
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.formValid {
+  gap: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.radioBtn {
+  display: flex;
+  gap: 1rem;
+}
+
+.radioDiv {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mainRadio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.textAreaLabel {
+  height: 70px;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: rgb(82, 169, 82);
+  border: none;
+  padding: 1rem 10rem;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>Student Registeration Form</header>
+      <form class="formValid">
+        <div>Firstname</div>
+        <label for="firstName">
+          <input id="firstName" type="text" placeholder="Firstname"
+        /></label>
+        <label for="middleName"
+          ><div>Middlename</div>
+          <input id="middleName" type="text" placeholder="Middlename"
+        /></label>
+        <label for="lastName">
+          <div>Lastname</div>
+          <input id="lastName" type="text" placeholder="Lastname"
+        /></label>
+
+        <div>
+          <span>Course:</span>
+          <select id="select" name="course">
+            <option value="">Course</option>
+            <option value="">Course</option>
+            <option value="">Course</option>
+          </select>
+        </div>
+        <div class="mainRadio">
+          <div>Gender:</div>
+          <div class="radioBtn">
+            <div class="radioDiv">
+              <input id="male" type="radio" value="Male" /> <span>Male </span>
+            </div>
+            <div class="radioDiv">
+              <input id="female" type="radio" value="Female" />
+              <span>Female </span>
+            </div>
+          </div>
+        </div>
+
+        <label for="tel"><input id="tel" type="tel" /></label>
+        <label for="phoneNum"
+          ><input id="PhoneNum" type="text" placeholder="phone no."
+        /></label>
+        <label for="texarea" class="textAreaLabel">
+          <textarea
+            itemid="textArea"
+            placeholder="Current Adderess"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+
+        <label for="email"
+          ><div class="bold">Enter Email</div>
+          <input id="email" type="email" pattern="" placeholder="Enter Email"
+        /></label>
+        <label for="pass"
+          ><div class="bold">Enter Passwoed</div>
+          <input id="pass" type="password" placeholder="Enter Password"
+        /></label>
+        <label for="rePass"
+          ><div class="bold">Re-type Password</div>
+          <input id="rePass" type="password" placeholder="Retype Password"
+        /></label>
+        <label for="subBtn"
+          ><input id="subBtn" type="submit" value="Register"
+        /></label>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
