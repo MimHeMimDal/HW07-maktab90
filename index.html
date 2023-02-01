@@ -13,7 +13,12 @@
       <form class="formValid">
         <div>Firstname</div>
         <label for="firstName">
-          <input id="firstName" type="text" placeholder="Firstname"
+          <input
+            id="firstName"
+            type="text"
+            placeholder="Firstname"
+            minlength="2"
+            maxlength="30"
         /></label>
         <label for="middleName"
           ><div>Middlename</div>
@@ -21,7 +26,12 @@
         /></label>
         <label for="lastName">
           <div>Lastname</div>
-          <input id="lastName" type="text" placeholder="Lastname"
+          <input
+            id="lastName"
+            type="text"
+            placeholder="Lastname"
+            minlength="2"
+            maxlength="30"
         /></label>
 
         <div>
@@ -61,7 +71,11 @@
 
         <label for="email"
           ><div class="bold">Enter Email</div>
-          <input id="email" type="email" pattern="" placeholder="Enter Email"
+          <input
+            id="email"
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Enter Email"
         /></label>
         <label for="pass"
           ><div class="bold">Enter Passwoed</div>
@@ -69,7 +83,11 @@
         /></label>
         <label for="rePass"
           ><div class="bold">Re-type Password</div>
-          <input id="rePass" type="password" placeholder="Retype Password"
+          <input
+            id="rePass"
+            type="password"
+            placeholder="Retype Password"
+            pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
         /></label>
         <label for="subBtn"
           ><input id="subBtn" type="submit" value="Register"
