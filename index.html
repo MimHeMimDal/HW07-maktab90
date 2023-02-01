@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="flex colDir gap">
+      <div class="inputs flex">
+        <label class="flex colDir gap" for="lapModel">
+          <div class="bold">Laptop Model</div>
+          <select id="lapModel">
+            <option selected disabled hidden value="">Nothing selected</option>
+            <option value="2">option</option>
+          </select>
+        </label>
+        <label class="flex colDir gap" for="processor"
+          ><div class="bold">Processor</div>
+          <select id="processor">
+            <option selected disabled hidden value="1">Nothing selected</option>
+            <option value="2">option</option>
+          </select></label
+        >
+        <label class="flex colDir gap" for="ram"
+          ><div class="bold">Ram</div>
+          <button>RAM</button></label
+        >
+        <label class="flex colDir gap" for="hardDisk"
+          ><div class="bold">Hard Disk</div>
+          <button>HARD</button></label
+        >
+        <label class="flex colDir gap" for="display"
+          ><div class="bold">Display</div>
+          <select id="display">
+            <option selected disabled hidden value="1">Nothing selected</option>
+            <option value="2">option</option>
+          </select></label
+        >
+      </div>
+      <div class="items flex colDir gap">
+        <table>
+          <tr>
+            <th>Laptop Model</th>
+            <th>Picture</th>
+            <th>Processor</th>
+            <th>Ram</th>
+            <th>Hard Disk</th>
+            <th>Display</th>
+            <th>Graphics</th>
+            <th>OS</th>
+            <th>Weight</th>
+            <th>Battery</th>
+            <th>Price</th>
+            <th>Purchase</th>
+          </tr>
+          <tr id="1">
+            <td>Dell XPS 13 OLED (2021)</td>
+            <td><img src="./Pictures/1.webp" alt="#" /></td>
+            <td>Intel Core i7-1185G7</td>
+            <td>16GB</td>
+            <td>512GB M.2 NVMe SSD</td>
+            <td>13.4-inch, 2160</td>
+            <td>Intel Iris Xe Graphics</td>
+            <td>Windows 10</td>
+            <td>2.4 Kg</td>
+            <td>9 Hours</td>
+            <td>$300</td>
+            <td><button class="purchaseBtn">Purchase</button></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
